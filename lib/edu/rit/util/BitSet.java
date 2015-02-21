@@ -39,7 +39,7 @@ import java.io.IOException;
  * <I>Note:</I> Class BitSet is not multiple thread safe.
  *
  * @author  Alan Kaminsky
- * @version 04-Jan-2015
+ * @version 16-Jan-2015
  */
 public class BitSet
 	implements Streamable
@@ -131,10 +131,7 @@ public class BitSet
 	public BitSet copy
 		(BitSet set)
 		{
-		int n = set.bitmap.length;
-		if (this.bitmap.length != n)
-			this.bitmap = new int [n];
-		System.arraycopy (set.bitmap, 0, this.bitmap, 0, n);
+		this.bitmap = set.bitmap == null ? null : (int[]) set.bitmap.clone();
 		return this;
 		}
 

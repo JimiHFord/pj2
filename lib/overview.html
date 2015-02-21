@@ -231,6 +231,29 @@ on the World Wide Web at
 
 <DL COMPACT>
 
+<P><DT>16-Feb-2015
+<DD>
+Fixed bugs in the <TT>clone()</TT> methods in several classes;
+the methods did not create an instance of the correct class
+when an instance of a subclass was cloned.
+<P>
+Fixed a bug in class edu.rit.util.BitSet;
+the private fields were not initialized correctly in all cases.
+Thank you to Vaibhav Gandhi for discovering the bug.
+<P>
+In class edu.rit.numeric.Mathe:
+Added the <TT>logBinomProb()</TT>,
+<TT>binomProb()</TT>,
+and <TT>cumulBinomProb()</TT> methods.
+
+<P><DT>09-Feb-2015
+<DD>
+In class edu.rit.pj2.vbl.HistogramVbl;
+Fixed a bug:
+the <TT>clone()</TT> method did not work properly in all cases;
+added <TT>prob()</TT>, <TT>expectedCount()</TT>,
+and <TT>expectedProb()</TT> methods.
+
 <P><DT>06-Feb-2015
 <DD>
 In package edu.rit.pj2.vbl:

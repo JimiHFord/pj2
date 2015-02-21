@@ -33,7 +33,7 @@ import static java.lang.Math.*;
  * class name is "Mathe" to distinguish it from class java.lang.Math.
  *
  * @author  Alan Kaminsky
- * @version 10-Jan-2015
+ * @version 16-Jan-2015
  */
 public class Mathe
 	{
@@ -143,6 +143,71 @@ public class Mathe
 		 long k)
 		{
 		return logFactorial(n) - logFactorial(n - k) - logFactorial(k);
+		}
+
+	/**
+	 * Returns the logarithm of the binomial probability.
+	 * <TT>logBinomProb(n,k,p)</TT> = log
+	 * choose(<I>n,k</I>)&nbsp;+&nbsp;<I>k</I>&nbsp;log&nbsp;<I>p</I>&nbsp;+&nbsp;(<I>n</I>&minus;<I>k</I>)&nbsp;log&nbsp;(1&minus;<I>p</I>).
+	 */
+	public static double logBinomProb
+		(long n,
+		 long k,
+		 double p)
+		{
+		return logBinomProb (n, k, log(p), log1p(-p));
+		}
+
+	/**
+	 * Returns the logarithm of the binomial probability given n, k, log(p), and
+	 * log(1-p).
+	 */
+	private static double logBinomProb
+		(long n,
+		 long k,
+		 double logp,
+		 double log1mp)
+		{
+		return logChoose(n,k) + k*logp + (n - k)*log1mp;
+		}
+
+	/**
+	 * Returns the binomial probability.
+	 * <TT>binomProb(n,k,p)</TT> =
+	 * choose(<I>n,k</I>)&nbsp;<I>p</I><SUP><I>k</I></SUP>&nbsp;(1&minus;<I>p</I>)<SUP><I>n</I>&minus;<I>k</I></SUP>.
+	 */
+	public static double binomProb
+		(long n,
+		 long k,
+		 double p)
+		{
+		// Special cases.
+		if (k < 0L || k > n) return 0.0;
+		return exp (logBinomProb (n, k, p));
+		}
+
+	/**
+	 * Returns the cumulative binomial probability. This is the sum from
+	 * <I>i</I> = 0 to <I>k</I> of {@link #binomProb(long,long,double)
+	 * binomProb(n,i,p)}.
+	 */
+	public static double cumulBinomProb
+		(long n,
+		 long k,
+		 double p)
+		{
+		// Special cases.
+		if (k < 0L) return 0.0;
+		if (k >= n) return 1.0;
+
+		// Do the log-sum-exp trick.
+		double logp = log(p);
+		double log1mp = log1p(-p);
+		double logmax = logBinomProb (n, k, logp, log1mp);
+		double cumul = 1.0;
+		for (long i = 0; i < k; ++ i)
+			cumul += exp (logBinomProb (n, i, logp, log1mp) - logmax);
+		return exp (logmax) * cumul;
 		}
 
 	/**
@@ -401,34 +466,38 @@ public class Mathe
 
 // Unit test main program.
 
-	/**
-	 * Unit test main program.
-	 */
-	public static void main
-		(String[] args)
-		{
-		// Parse command line arguments.
-		if (args.length != 2) usage();
-		long n = Long.parseLong (args[0]);
-		long k = Long.parseLong (args[1]);
-
-		System.out.printf ("n      = %.16e%n", (double)n);
-		System.out.printf ("log n! = %.16e%n", logFactorial(n));
-		System.out.printf ("n!     = %.16e%n", exp(logFactorial(n)));
-		System.out.printf ("k      = %.16e%n", (double)k);
-		System.out.printf ("log k! = %.16e%n", logFactorial(k));
-		System.out.printf ("k!     = %.16e%n", exp(logFactorial(k)));
-		System.out.printf ("log choose(n,k) = %.16e%n", logChoose(n,k));
-		System.out.printf ("choose(n,k)     = %.16e%n", exp(logChoose(n,k)));
-		}
-
-	/**
-	 * Print a usage message and exit.
-	 */
-	private static void usage()
-		{
-		System.err.println ("Usage: java edu.rit.numeric.Mathe <n> <k>");
-		System.exit (1);
-		}
+//	/**
+//	 * Unit test main program.
+//	 */
+//	public static void main
+//		(String[] args)
+//		{
+//		// Parse command line arguments.
+//		if (args.length != 3) usage();
+//		long n = Long.parseLong (args[0]);
+//		long k = Long.parseLong (args[1]);
+//		double p = Double.parseDouble (args[2]);
+//
+//		System.out.printf ("n      = %.16e%n", (double)n);
+//		System.out.printf ("log n! = %.16e%n", logFactorial(n));
+//		System.out.printf ("n!     = %.16e%n", exp(logFactorial(n)));
+//		System.out.printf ("k      = %.16e%n", (double)k);
+//		System.out.printf ("log k! = %.16e%n", logFactorial(k));
+//		System.out.printf ("k!     = %.16e%n", exp(logFactorial(k)));
+//		System.out.printf ("log choose(n,k) = %.16e%n", logChoose(n,k));
+//		System.out.printf ("choose(n,k)     = %.16e%n", exp(logChoose(n,k)));
+//		System.out.printf ("log binomProb(n,k,p)  = %.16e%n", logBinomProb(n,k,p));
+//		System.out.printf ("binomProb(n,k,p)      = %.16e%n", binomProb(n,k,p));
+//		System.out.printf ("cumulBinomProb(n,k,p) = %.16e%n", cumulBinomProb(n,k,p));
+//		}
+//
+//	/**
+//	 * Print a usage message and exit.
+//	 */
+//	private static void usage()
+//		{
+//		System.err.println ("Usage: java edu.rit.numeric.Mathe <n> <k> <p>");
+//		System.exit (1);
+//		}
 
 	}

@@ -34,7 +34,7 @@ import java.io.IOException;
  * Class Map provides a mapping from keys to values. The key must be an object
  * suitable for use in a hashed data structure; that is, the key class must
  * define the {@link Object#equals(Object) equals()} and {@link
- * Object#hashCode() hashCode()} methods properly. Keys must not be null. Once a
+ * Object#hashCode() hashCode()} methods properly. Keys may be null. Once a
  * key is stored in a map, the state of the key must not be altered. The value
  * may be any object. Values may be null. Once a value is stored in a map, the
  * state of the value may be altered, and the value may be replaced by a
@@ -127,13 +127,16 @@ public class Map<K,V>
 	 *
 	 * @param  map  Map to copy.
 	 *
+	 * @return  This map.
+	 *
 	 * @exception  NullPointerException
 	 *     (unchecked exception) Thrown if <TT>map</TT> is null.
 	 */
-	public void copy
+	public Map<K,V> copy
 		(Map<K,V> map)
 		{
 		this.mapping.copy (map.mapping);
+		return this;
 		}
 
 	/**

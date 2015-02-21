@@ -130,16 +130,19 @@ public class Set<E>
 	 *
 	 * @param  set  Set to copy.
 	 *
+	 * @return  This set.
+	 *
 	 * @exception  NullPointerException
 	 *     (unchecked exception) Thrown if <TT>set</TT> is null.
 	 */
-	public void copy
+	public Set<E> copy
 		(Set<E> set)
 		{
 		clear();
 		for (int i = 0; i < set.nmax; ++ i)
 			if (set.table[i] != null)
 				add (set.table[i]);
+		return this;
 		}
 
 	/**

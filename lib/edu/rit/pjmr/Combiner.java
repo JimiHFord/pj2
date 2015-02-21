@@ -26,6 +26,7 @@
 package edu.rit.pjmr;
 
 import edu.rit.pj2.Vbl;
+import edu.rit.pj2.TerminateException;
 import edu.rit.util.Action;
 import edu.rit.util.Instance;
 import edu.rit.util.Map;
@@ -130,7 +131,14 @@ public class Combiner<K,V extends Vbl>
 	 */
 	public Object clone()
 		{
-		return new Combiner<K,V> (this);
+		try
+			{
+			return ((Combiner) super.clone()) .copy (this);
+			}
+		catch (CloneNotSupportedException exc)
+			{
+			throw new TerminateException ("Shouldn't happen", exc);
+			}
 		}
 
 	/**

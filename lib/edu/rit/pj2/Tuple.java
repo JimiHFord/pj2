@@ -133,8 +133,7 @@ public abstract class Tuple
 			}
 		catch (CloneNotSupportedException exc)
 			{
-			throw new IllegalStateException
-				("Tuple.clone(): Shouldn't happen", exc);
+			throw new TerminateException ("Shouldn't happen", exc);
 			}
 		}
 

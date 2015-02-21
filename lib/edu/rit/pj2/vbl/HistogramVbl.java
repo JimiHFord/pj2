@@ -30,6 +30,7 @@ import edu.rit.io.OutStream;
 import edu.rit.io.Streamable;
 import edu.rit.numeric.Statistics;
 import edu.rit.pj2.Vbl;
+import edu.rit.pj2.TerminateException;
 import edu.rit.util.Instance;
 import java.io.IOException;
 
@@ -55,7 +56,7 @@ import java.io.IOException;
  * #reduce(Vbl) reduce()} method.
  *
  * @author  Alan Kaminsky
- * @version 06-Feb-2015
+ * @version 12-Feb-2015
  */
 public abstract class HistogramVbl
 	implements Vbl, Streamable
@@ -123,13 +124,16 @@ public abstract class HistogramVbl
 	 * Make this histogram be a deep copy of the given histogram.
 	 *
 	 * @param  hist  Histogram to copy.
+	 *
+	 * @return  This histogram.
 	 */
-	public void copy
+	public HistogramVbl copy
 		(HistogramVbl hist)
 		{
 		this.B = hist.B;
-		this.count = (long[]) hist.count.clone();
+		this.count = hist.count == null ? null : (long[]) hist.count.clone();
 		this.total = hist.total;
+		return this;
 		}
 
 	/**
@@ -156,6 +160,21 @@ public abstract class HistogramVbl
 		}
 
 	/**
+	 * Returns the observed probability of incrementing the count in the given
+	 * bin of this histogram. This method returns {@link #count(int)
+	 * count(i)}/{@link #total() total()}.
+	 *
+	 * @param  i  Bin number.
+	 *
+	 * @return  Observed probability for bin <TT>i</TT>.
+	 */
+	public double prob
+		(int i)
+		{
+		return (double)count[i]/total;
+		}
+
+	/**
 	 * Returns the total count in all bins of this histogram.
 	 *
 	 * @return  Total count.
@@ -163,6 +182,40 @@ public abstract class HistogramVbl
 	public long total()
 		{
 		return total;
+		}
+
+	/**
+	 * Determine the expected count in the given bin for a chi-square test. This
+	 * method returns {@link #expectedProb(int) expectedProb(i)}*{@link #total()
+	 * total()}.
+	 *
+	 * @param  i  Bin number.
+	 *
+	 * @return  Expected count in bin <TT>i</TT>.
+	 */
+	public double expectedCount
+		(int i)
+		{
+		return expectedProb(i)*total;
+		}
+
+	/**
+	 * Determine the expected probability of incrementing the given bin for a
+	 * chi-square test.
+	 * <P>
+	 * The base class implementation of this method assumes that the bin counts
+	 * are supposed to be all the same; thus, the expected probability for each
+	 * bin is the reciprocal of the number of bins. A subclass can override this
+	 * method to return different expected probabilities.
+	 *
+	 * @param  i  Bin number.
+	 *
+	 * @return  Expected probability for bin <TT>i</TT>.
+	 */
+	public double expectedProb
+		(int i)
+		{
+		return 1.0/B;
 		}
 
 	/**
@@ -209,15 +262,11 @@ public abstract class HistogramVbl
 		{
 		try
 			{
-			HistogramVbl vbl = Instance.newDefaultInstance (this.getClass());
-			vbl.copy (this);
-			return vbl;
+			return ((HistogramVbl) super.clone()) .copy (this);
 			}
-		catch (Throwable exc)
+		catch (CloneNotSupportedException exc)
 			{
-			throw new IllegalArgumentException
-				("HistogramVbl.clone(): Could not create new instance",
-				 exc);
+			throw new TerminateException ("Shouldn't happen", exc);
 			}
 		}
 
@@ -304,24 +353,6 @@ public abstract class HistogramVbl
 		{
 		++ count[i];
 		++ total;
-		}
-
-	/**
-	 * Determine the expected count in the given bin for a chi-square test.
-	 * <P>
-	 * The base class implementation of this method assumes that the bin counts
-	 * are supposed to be all the same; thus, the expected count in each bin is
-	 * the total count divided by the number of bins. A subclass can override
-	 * this method to return different expected counts.
-	 *
-	 * @param  i  Bin number.
-	 *
-	 * @return  Expected count in bin <TT>i</TT>.
-	 */
-	protected double expectedCount
-		(int i)
-		{
-		return (double)total/(double)B;
 		}
 
 	}

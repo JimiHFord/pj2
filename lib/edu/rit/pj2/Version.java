@@ -29,7 +29,7 @@ package edu.rit.pj2;
  * Class Version defines version information for the Parallel Java 2 Library.
  *
  * @author  Alan Kaminsky
- * @version 06-Feb-2015
+ * @version 16-Feb-2015
  */
 public class Version
 	{
@@ -45,6 +45,6 @@ public class Version
 	/**
 	 * The Parallel Java 2 Library version.
 	 */
-	public static final String PJ2_VERSION = "Parallel Java 2 v20150206";
+	public static final String PJ2_VERSION = "Parallel Java 2 v20150216";
 
 	}

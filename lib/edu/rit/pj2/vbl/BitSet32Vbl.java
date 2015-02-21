@@ -28,6 +28,7 @@ package edu.rit.pj2.vbl;
 import edu.rit.io.InStream;
 import edu.rit.io.OutStream;
 import edu.rit.pj2.Vbl;
+import edu.rit.pj2.TerminateException;
 import edu.rit.util.BitSet32;
 import java.io.IOException;
 
@@ -319,8 +320,7 @@ public class BitSet32Vbl
 			}
 		catch (CloneNotSupportedException exc)
 			{
-			throw new IllegalStateException
-				("BitSet32Vbl.clone(): Shouldn't happen", exc);
+			throw new TerminateException ("Shouldn't happen", exc);
 			}
 		}
 
