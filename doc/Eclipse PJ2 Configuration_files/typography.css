@@ -1,0 +1,118 @@
+/* -------------------------------------------------------------- 
+   
+   typography.css
+   * Sets up some sensible default typography for Slate.
+   
+-------------------------------------------------------------- */
+
+/* Default font settings */
+body { 
+  /* customize_body */ font:normal normal 14px Helvetica; /* customize_body */
+  /* customize_body */ color:#666; /* customize_body */
+  line-height:1.5;
+}
+
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { font-family: 'Lato', Arial, Helvetica, sans-serif; font-weight: 400; /* customize_heading_color */ color:#444; /* customize_heading_color */ }
+h1 a, h2 a, h3 a { text-decoration: none; }
+
+h1 { font-size: 3.2em; font-weight: 700; line-height: 1.1em; margin: 0 0 0.5em; }
+h2 { font-size: 2.5em; line-height: 1.1em; margin: 0 0 0.5em; }
+h3 { font-size: 1.8em; line-height: 1em; margin: 0 0 0.75em; }
+h4 { font-size: 1.4em; line-height: 1.25em; margin: 0 0 1em; }
+h5 { font-size: 1.2em; font-weight: bold; margin: 0 0 .75em; }
+h6 { font-size: 1em; font-weight: bold; margin: 0 0 .75em; }
+
+h1 img, h2 img, h3 img, 
+h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+
+/* Text elements
+-------------------------------------------------------------- */
+
+p           { margin: 0 0 1.5em; }
+p img.left, img.left	{ float:left; margin:0 1.75em 1.75em 0; }
+p img.right, img.right	{ float:right; margin:0 0 1.75em 1.75em; }
+img.left, img.right		{ background:#fff; padding:5px; border:1px solid #ddd; }
+
+a { 
+	/* customize_link */ color:#506d83; /* customize_link */
+	text-decoration: underline;
+}
+a:hover     { /* customize_link_hover */ color:#27465e; /* customize_link_hover */ }
+
+strong      { font-weight: bold; }
+em,dfn      { font-style: italic; }
+dfn         { font-weight: bold; }
+sup, sub    { line-height: 0; }
+
+abbr, 
+acronym     { border-bottom: 1px dotted #666; }
+address     { margin: 0 0 1.5em; font-style: italic; }
+del         { color:#666; }
+
+pre 				{ margin: 1.5em 0; white-space: pre; }
+pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+
+hr {
+  	border: 0!important;
+  	width: 100%;
+  	color: #ccc;
+	background-color: #ccc;
+	height: 1px;
+	margin: 2em 0!important;
+}
+
+
+/*	Blockquotes  */
+blockquote, blockquote p { font-family:"Droid Serif", Georgia, Times, serif; font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+blockquote { margin: 0 0 20px; padding: 0 20px 0 19px; border-left: 3px solid #ddd; }
+blockquote cite { display: block; font-size: 12px; color: #555; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+
+/* Lists
+-------------------------------------------------------------- */
+
+li ul, 
+li ol       { margin:0 1.5em; }
+ul, ol      { margin: 0 0 1.5em 2em; padding:0 }
+
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal; }
+
+dl          { margin: 0 0 1.5em 0; }
+dl dt       { font-weight: bold; }
+dd          { margin-left: 1.5em;}
+
+
+
+/* Misc classes
+-------------------------------------------------------------- */
+
+.small      { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+.hide       { display: none; }
+
+.quiet      { color: #666; }
+.loud       { color: #000; }
+.highlight  { background:#ff0; }
+.added      { background:#060; color: #fff; }
+.removed    { background:#900; color: #fff; }
+
+.first      { margin-left:0; padding-left:0; }
+.last       { margin-right:0; padding-right:0; }
+.top        { margin-top:0; padding-top:0; }
+.bottom     { margin-bottom:0; padding-bottom:0; }
+.left		{ float:left; }
+.right		{ float:right; }
+
+.icon		{ float:left; margin:0 10px 0 0 !important; }
+
+.button {}

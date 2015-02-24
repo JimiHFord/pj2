@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/ -->
+<html lang="en" class="no-js"><script type="text/javascript" defer="" async="" src="./Eclipse PJ2 Configuration_files/piwik.js"></script><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="http://www.microsofttranslator.com/static/213366/css/WidgetV3.css?v=213366" rel="stylesheet"><script type="text/javascript" src="./Eclipse PJ2 Configuration_files/menu174.js"></script><script type="text/javascript" charset="UTF-8" src="./Eclipse PJ2 Configuration_files/WidgetV3.ashx"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" type="text/css" href="./Eclipse PJ2 Configuration_files/css">
+<link rel="stylesheet" media="screen" type="text/css" href="./Eclipse PJ2 Configuration_files/columnal.css">
+<link rel="stylesheet" media="screen" type="text/css" href="./Eclipse PJ2 Configuration_files/typography.css">
+<link rel="stylesheet" media="screen" type="text/css" href="./Eclipse PJ2 Configuration_files/main.css">
+
+<!-- Skins -->
+<!--<link rel="stylesheet" media="screen" type="text/css" href="/packages/theme_slate/themes/slate/skins/minimal/minimal.css" />-->
+<!--<link rel="stylesheet" media="screen" type="text/css" href="/packages/theme_slate/themes/slate/skins/minimal-dark/minimal-dark.css" />-->
+<!--<link rel="stylesheet" media="screen" type="text/css" href="/packages/theme_slate/themes/slate/skins/minimal-grunge/minimal-grunge.css" />-->
+
+<!-- Fixes for IE -->
+<!--[if lt IE 9]>
+<link rel="stylesheet" media="screen" type="text/css" href="/packages/theme_slate/themes/slate/ie.css" />
+<![endif]-->
+<!-- use "fixed-984px-ie.css" or "fixed-960px-ie.css for a 984px or 960px fixed width for IE6 and 7 -->
+<!--[if lte IE 7]>
+<link rel="stylesheet" media="screen" type="text/css" href="/packages/theme_slate/themes/slate/fixed-984px-ie.css" />
+<![endif]-->
+
+<link rel="stylesheet" media="screen" type="text/css" href="./Eclipse PJ2 Configuration_files/mobile.css">
+
+
+
+<title>Eclipse PJ2 Configuration</title>
+<meta name="description" content="This guide walks you through configuring the Eclipse IDE with the Parallel Java 2 (PJ2) framework.">
+<meta name="keywords" content="java,parallel java 2,pj2, parallel java 2,eclipse,kaminsky,rit,rochester institute of technology,shane hale rit">
+<meta name="generator" content="concrete5 - 5.6.3.2">
+<script type="text/javascript">
+var CCM_DISPATCHER_FILENAME = '/index.php';
+var CCM_CID = 146;
+var CCM_EDIT_MODE = false;
+var CCM_ARRANGE_MODE = false;
+var CCM_IMAGE_PATH = "/concrete/images";
+var CCM_TOOLS_PATH = "/index.php/tools/required";
+var CCM_BASE_URL = "http://shane-hale.com";
+var CCM_REL = "";
+
+</script><style type="text/css"></style>
+
+<link rel="stylesheet" type="text/css" href="./Eclipse PJ2 Configuration_files/ccm.base.css">
+<script type="text/javascript" src="./Eclipse PJ2 Configuration_files/jquery.js"></script>
+<script type="text/javascript" src="./Eclipse PJ2 Configuration_files/ccm.base.js"></script>
+<style type="text/css"> 
+#blockStyle27Main2 {text-align:center; background-repeat:no-repeat; } 
+#blockStyle29Main3 {text-align:center; background-repeat:no-repeat; } 
+#blockStyle31Main7 {text-align:center; background-repeat:no-repeat; } 
+#blockStyle33Main6 {text-align:center; background-repeat:no-repeat; } 
+#blockStyle35Main5 {text-align:center; background-repeat:no-repeat; } 
+#blockStyle37Main4 {text-align:center; background-repeat:no-repeat; } 
+#blockStyle322Sidebar39 {text-align:center; background-repeat:no-repeat; } 
+#blockStyle342Main44 {text-align:right; background-repeat:no-repeat; } 
+</style>
+<script type="text/javascript" src="./Eclipse PJ2 Configuration_files/superfish.js"></script>
+<script type="text/javascript" src="./Eclipse PJ2 Configuration_files/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="./Eclipse PJ2 Configuration_files/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="./Eclipse PJ2 Configuration_files/jquery.fancybox-1.3.4.css">
+<script type="text/javascript" src="./Eclipse PJ2 Configuration_files/jquery.colorbox-min.js"></script>
+<link rel="stylesheet" type="text/css" href="./Eclipse PJ2 Configuration_files/colorbox.css">
+<script type="text/javascript"> 
+			 $(document).ready(function(){
+				 $("a[rel='lb_image']").colorbox({returnFocus: false}); 
+			 });
+			</script>
+<script type="text/javascript" src="./Eclipse PJ2 Configuration_files/jquery.rating.js"></script>
+<link rel="stylesheet" type="text/css" href="./Eclipse PJ2 Configuration_files/jquery.ui.css">
+<link rel="stylesheet" type="text/css" href="./Eclipse PJ2 Configuration_files/jquery.rating.css">
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="./Eclipse PJ2 Configuration_files/functions.js"></script>
+
+<link rel="stylesheet" type="text/css" href="./Eclipse PJ2 Configuration_files/widget015.top.svg.css" media="all"><style id="wrc-middle-css" type="text/css">.wrc_whole_window{	display: none;	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	left: 0px;	top: 0px;	width: 100%;	height: 100%;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/background-body.jpg) repeat-x left top;	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/logo.jpg) no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	margin-bottom: 15px;	text-align: center;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script id="wrc-script-middle_window" type="text/javascript" language="JavaScript">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script><script type="text/javascript" charset="utf-8" src="./Eclipse PJ2 Configuration_files/metrics.js"></script><script type="text/javascript" charset="utf-8" src="./Eclipse PJ2 Configuration_files/community.aspx"></script><link href="http://www.microsofttranslator.com/static/213366/css/WidgetLauncher.css?v=213366" rel="stylesheet"><style type="text/css"></style></head>
+
+<body id="left_sidebar" class="page146" gram_dict="true" cz-shortcut-listen="true"><div id="MicrosoftTranslatorCommunity" style="display: none;" class="MSTCltr"><div id="MSTCContent" translate="no"><a id="MSTCExpandLink" href="javascript:void(0)"><span id="MSTCImprove">Improve translation</span></a><div id="MSTCRootPanel"><span id="MSTCLoading">Loading...</span><div id="MSTCTransPanelError" style="display: none;"><div class="MSTCTableRow"><div class="MSTCTransPanelExc MSTCTableCell"><img id="ExclamationImage" src="./Eclipse PJ2 Configuration_files/error_exclamation.gif" style="border-width:0px;"></div><div class="MSTCTableCell"><span id="MSTCTransPanelErrorMsg"></span></div></div><div class="MSTCTableRow"><div class="MSTCTableCell"></div><div class="MSTCTableCell MSTCFlipHoriz"><a href="http://go.microsoft.com/?linkid=9713560" target="_blank"><img id="MSTCHelpImgBtn" class="MSTCErrorButtons" src="./Eclipse PJ2 Configuration_files/error_help.gif" style="border-width:0px;"></a><input type="image" name="MSTCOKImgBtn" id="MSTCOKImgBtn" class="MSTCErrorButtons" src="./Eclipse PJ2 Configuration_files/error_OK.gif" style="border-width:0px;"></div></div></div><div id="MSTCTransPanel"></div><div id="MSTCPrevNextPanel" style="display: none;"><a id="MSTCPrevLink" href="javascript:void(0)"><span>Previous</span><span id="MSTCPrevCount">(0)</span></a><a id="MSTCNextLink" href="javascript:void(0)"><span>Next</span><span id="MSTCNextCount">(0)</span></a></div><div id="MSTCFooterPanel"><span id="MSTCLegalHelpBox"><a id="MSTCLegalLink" href="http://aka.ms/translatortou" target="_blank">Legal</a><span class="MSTCSpacer"></span><a id="MSTCHelpLink" href="http://go.microsoft.com/?linkid=9722454" target="_blank">Help</a></span></div></div><div id="MSTCHidden" style="display: none;"><span id="MSTCAppIdToken">ZwjSrg1eK6mSoZcyouiswmAQWfv-r9AHq_6W-LYDlt2qb2gaLti_pG_NfX4sGTzS3uG5Nq05Vt1KLSs2yY47lLMD9Pcn6jhXMi84_Ee2BJB6fEjT3foc3Z6nAWrZha1rQ</span><span id="MSTCMaxRating">1</span><span id="MSTCImagePath">http://www.microsofttranslator.com/static/213366/img/</span><span id="MSTCAuthLang"></span><a id="MSTCDashboardUrl"></a><span id="MSTCSubmitting">Submitting...</span><span id="MSTCApprove">Approve</span><span id="MSTCApproveTooltip">Approve this as the default translation</span><span id="MSTCReject">Reject</span><span id="MSTCRejectTooltip">Hide this translation from other users</span><span id="MSTCRestore">Restore</span><span id="MSTCRestoreTooltip">Show this translation to other users</span><span id="MSTCUserID"></span><div id="MSTCButtonPanel"><a title="Edit this translation" class="MSTCBlueButton MSTCEditButton"><span class="MSTCButtonIcon"><img class="MSTCButtonImg" src="./Eclipse PJ2 Configuration_files/ctfedit.gif" style="border-width:0px;"></span><span class="MSTCButtonLabel">Edit</span></a><a title="Suggest this as a better translation" class="MSTCBlueButton MSTCSelectButton"><span class="MSTCButtonIcon"><span class="MSTCVoteCountSelect"></span><img class="MSTCButtonImg" src="./Eclipse PJ2 Configuration_files/ctfselect.gif" style="border-width:0px;margin: 0;"></span><span class="MSTCButtonLabel">Select</span></a><a title="Report this translation as offensive" class="MSTCRedButton MSTCReportButton"><span class="MSTCButtonIcon"><img class="MSTCButtonImg" src="./Eclipse PJ2 Configuration_files/ctfreport.gif" style="border-width:0px;margin-top: 5px;"></span><span class="MSTCButtonLabel">Report</span></a><a title="Suggest this as a better translation" class="MSTCBlueButton MSTCSubmitButton" style="display: none;"><span class="MSTCButtonIcon"><img class="MSTCButtonImg" src="./Eclipse PJ2 Configuration_files/ctfselect.gif" style="border-width:0px;margin: 0"></span><span class="MSTCButtonLabel">Submit</span></a><a title="Cancel" class="MSTCRedButton MSTCCancelButton" style="display: none;"><span class="MSTCButtonIcon"><img class="MSTCButtonImg" src="./Eclipse PJ2 Configuration_files/ctfreport.gif" style="border-width:0px;margin-top: 7px;"></span><span class="MSTCButtonLabel">Cancel</span></a></div></div></div></div>
+
+<div id="container">
+
+	<header>
+    	<div id="logo">
+                        <a id="logo-text" href="http://shane-hale.com/" title="Shane-Hale">Shane-Hale</a>
+        </div><!-- #logo ends -->
+        <div id="header-area">
+        	        </div><!-- #header-area ends -->
+    </header><!-- header ends -->
+    
+    <nav>
+    	<div id="mobile-nav-btn">Menu<span></span></div>
+    	<ul class="sf-menu sf-js-enabled sf-arrows"><li class=""><a href="http://shane-hale.com/" target="_self" class="">Home</a></li><li class="nav-path-selected"><a href="http://shane-hale.com/index.php/java/" target="_self" class="nav-path-selected sf-with-ul">Tutorials</a><div class="mobnav-subarrow"></div><ul style="display: none;"><li class="nav-path-selected"><a href="http://shane-hale.com/index.php/java/java/" target="_self" class="nav-path-selected sf-with-ul">Java</a><div class="mobnav-subarrow"></div><ul style="display: none;"><li class="nav-selected nav-path-selected"><a href="./Eclipse PJ2 Configuration_files/Eclipse PJ2 Configuration.html" target="_self" class="nav-selected nav-path-selected">Eclipse PJ2 Configuration</a></li><li class=""><a href="http://shane-hale.com/index.php/java/java/binary-search-tree/" target="_self" class="">Binary Search Tree</a></li></ul></li><li class=""><a href="http://shane-hale.com/index.php/java/windows/" target="_self" class="sf-with-ul">Windows</a><div class="mobnav-subarrow"></div><ul style="display: none;"><li class=""><a href="http://shane-hale.com/index.php/java/windows/robocopy-utility/" target="_self" class="">Robocopy Utility</a></li></ul></li><li class=""><a href="http://shane-hale.com/index.php/java/algorithms/" target="_self" class="sf-with-ul">Algorithms</a><div class="mobnav-subarrow"></div><ul style="display: none;"><li class=""><a href="http://shane-hale.com/index.php/java/algorithms/binary-search/" target="_self" class="">Binary Search Tree Introduction</a></li></ul></li><li class=""><a href="http://shane-hale.com/index.php/java/linux/" target="_self" class="sf-with-ul">Linux</a><div class="mobnav-subarrow"></div><ul style="display: none;"><li class=""><a href="http://shane-hale.com/index.php/java/linux/alpine-webmail-client/" target="_self" class="">Alpine Webmail Client</a></li></ul></li><li class=""><a href="http://shane-hale.com/index.php/java/app-development/" target="_self" class="sf-with-ul">App Development</a><div class="mobnav-subarrow"></div><ul style="display: none;"><li class=""><a href="http://shane-hale.com/index.php/java/app-development/windows-phone/" target="_self" class="sf-with-ul">Windows Phone</a><div class="mobnav-subarrow"></div><ul style="display: none;"><li class=""><a href="http://shane-hale.com/index.php/java/app-development/windows-phone/how-use-httpclient/" target="_self" class="">How to Use HttpClient</a></li></ul></li></ul></li></ul></li><li class=""><a href="http://shane-hale.com/index.php/apps/" target="_self" class="sf-with-ul">Apps</a><div class="mobnav-subarrow"></div><ul style="display: none;"><li class=""><a href="http://shane-hale.com/index.php/apps/windows-phone/" target="_self" class="sf-with-ul">Windows Phone</a><div class="mobnav-subarrow"></div><ul style="display: none;"><li class=""><a href="http://shane-hale.com/index.php/apps/windows-phone/chegg/" target="_self" class="">Chegg Textbook Appraiser</a></li><li class=""><a href="http://shane-hale.com/index.php/apps/windows-phone/wcjw-country/" target="_self" class="">WCJW Country</a></li></ul></li></ul></li><li class=""><a href="http://shane-hale.com/index.php/site-map/" target="_self" class="">Site Map</a></li><li class=""><a href="http://shane-hale.com/index.php/about/" target="_self" class="">About</a></li></ul>        <div class="clearboth">&nbsp;</div>
+    </nav><!-- nav ends -->
+    
+    <div id="feature">
+                    </div><!-- #feature ends -->        
+    <div id="wrapper">
+    
+    	        <div id="page-meta">
+            <div id="breadcrumbs">
+                <a href="http://shane-hale.com/" target="_self">Home</a> <span class="ccm-autonav-breadcrumb-sep">&gt;</span> <a href="http://shane-hale.com/index.php/java/" target="_self">Tutorials</a> <span class="ccm-autonav-breadcrumb-sep">&gt;</span> <a href="http://shane-hale.com/index.php/java/java/" target="_self">Java</a> <span class="ccm-autonav-breadcrumb-sep">&gt;</span> Eclipse PJ2 Configuration            </div><!-- #breadcrumbs ends -->
+                        	<h1>Eclipse PJ2 Configuration</h1>
+				                <p>This guide walks you through configuring the Eclipse IDE with the Parallel Java 2 (PJ2) framework.</p>
+                			        </div><!-- #page-meta ends -->
+        
+        <div class="row">
+        	<div id="sidebar" class="col_3">
+            	<p><span style="text-decoration: underline; font-size: medium;"><strong>Navigation:</strong></span><br>&nbsp;&nbsp;<span style="font-size: medium;">↳</span> <a href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#Overview">Overview</a><br>&nbsp; <span style="font-size: medium;">↳</span> <a href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#Download">Download PJ2</a><br>&nbsp; <span style="font-size: medium;">↳</span> <a href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#Configure">Configure Eclipse</a></p>	<div id="blockStyle322Sidebar39" class=" ccm-block-styles">
+<div id="MicrosoftTranslatorWidget" class="Dark" style="color: white; background-color: transparent;" translate="no">&nbsp;<div id="WidgetLauncher" style="direction: ltr;"><div id="LauncherTranslatePhrase" class="WidgetEnabled" style="background-color: rgb(85, 85, 85);" title="Translate To English"><span id="TranslateSpan">TRANSLATE</span></div><div id="LauncherLogo" class="WithPhraseAfter"><a id="LauncherLogoLink" href="http://www.bing.com/translator" target="_blank" title="//www.bing.com/translator"><img id="LauncherLogoImage" src="./Eclipse PJ2 Configuration_files/binglogo_dark.png"></a></div></div></div>
+<script type="text/javascript">// <![CDATA[
+setTimeout(function(){{var s=document.createElement('script');s.type='text/javascript';s.charset='UTF-8';s.src=((location && location.href && location.href.indexOf('https') == 0)?'https://ssl.microsofttranslator.com':'http://www.microsofttranslator.com')+'/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=True&ui=true&settings=undefined&from=';var p=document.getElementsByTagName('head')[0]||document.documentElement;p.insertBefore(s,p.firstChild); }},0);
+// ]]></script></div><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Footer Ad -->
+<p><ins class="adsbygoogle" style="display: inline-block; width: 180px; height: 150px;" data-ad-client="ca-pub-9130637866843936" data-ad-slot="5504616003"></ins></p>
+<script type="text/javascript">// <![CDATA[
+(adsbygoogle = window.adsbygoogle || []).push({});
+// ]]></script>            </div><!-- #sidebar ends -->
+            
+            <div id="content" class="col_9 omega">
+                	<div id="blockStyle342Main44" class=" ccm-block-styles">
+<script type="text/javascript">var addthis_pub = "shanemihale@gmail.com";</script>
+ 
+		<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, &#39;&#39;, &#39;[URL]&#39;, &#39;[TITLE]&#39;)" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="./Eclipse PJ2 Configuration_files/lg-share-en.gif" width="125" height="16" border="0" alt=""></a>
+<script type="text/javascript" src="./Eclipse PJ2 Configuration_files/addthis_widget.js"></script></div><p><strong><span style="font-size: medium;"><a id="Overview">Overview</a></span></strong></p>
+<p>This guide is intended to show you how to configure the Eclipse IDE with the Parallel Java 2 (PJ2) framework created by Rochester Institute of technology Professor Alan Kaminsky.</p>
+<p>Note: Parallel Java 2 (PJ2) is the work of Alan Kaminsky, and is in no way related to Shane-Hale.com. This guide is only intended to help others to configure this framework with Eclipse, any questions related to specific operations of PJ2 should be referenced at the <a href="http://www.cs.rit.edu/~ark/pj2.shtml">PJ2 website</a>.</p>
+<p>Firstly, this guide assumes that you have already configured, and installed the Eclipse IDE, and Java Development Kit (JDK). Otherwise, these applications can be downloaded at their respective websites:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eclipse IDE: <a href="http://www.eclipse.org/downloads/">here</a><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JDK: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">here</a></p>
+<p><strong><span style="font-size: medium;"><a id="Download">Download PJ2<br></a></span></strong></p>
+<p>To download the PJ2 java archive (executable distribution) file from Alan Kaminsky’s webpage <a href="http://www.cs.rit.edu/~ark/pj2.shtml#download">here</a>.</p>
+<p style="padding-left: 30px;">For easier reference, you should rename this JAR file to “pj2.jar”</p>
+<p><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><a id="Configure">Configure Eclipse<br></a></span></strong></span></strong></p>
+<p>Begin by creating a new Java Project (if you have not already done so)</p>	<div id="blockStyle27Main2" class=" ccm-block-styles">
+<div class="lightboxed-image-block"><a href="http://shane-hale.com/files/cache/2cdbe461389ae1743228484c9702a7ed_f4.png" title="New Project" rel="lb_image" class="cboxElement"><img border="0" class="lightboxed-image" alt="New Project" src="./Eclipse PJ2 Configuration_files/7bb8050c54a2b0633e5992093652da60_f4.png" width="240" height="322" style="opacity: 1;"></a></div></div><p><strong>Step 3)</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Right click on the newly created project within the Eclipse Package Explorer, click ‘<strong>Build Path</strong>', then ‘<strong>Add External Archives…</strong>’</p>	<div id="blockStyle29Main3" class=" ccm-block-styles">
+<div class="lightboxed-image-block"><a href="http://shane-hale.com/files/cache/2725b68589d4b9ae819b96aa71a1aacc_f1.png" title="Add External Archive" rel="lb_image" class="cboxElement"><img border="0" class="lightboxed-image" alt="Add External Archive" src="./Eclipse PJ2 Configuration_files/4c90a17873d1b8365981353ff00ac3aa_f1.png" width="240" height="259" style="opacity: 1;"></a></div></div><p><strong>Step 4)&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp; Select the (<strong>pj2.jar</strong>) file that was previously downloaded in step 1 from Alan Kaminsky’s website</p>	<div id="blockStyle31Main7" class=" ccm-block-styles">
+<div class="lightboxed-image-block"><a href="http://shane-hale.com/files/cache/1e6e9c1c34057013a7d2ab1ba9f2f960_f7.png" title="Select .JAR File" rel="lb_image" class="cboxElement"><img border="0" class="lightboxed-image" alt="Select .JAR File" src="./Eclipse PJ2 Configuration_files/0d47540717eb119a3f9275bdfa7611df_f7.png" width="240" height="146"></a></div></div><p><strong>Step 5)&nbsp;&nbsp;</strong>&nbsp;&nbsp;&nbsp; Right click on the project in the Package Explorer, click ‘<strong>Run As</strong>’, then ‘<strong>Run Configurations…</strong>’</p>	<div id="blockStyle33Main6" class=" ccm-block-styles">
+<div class="lightboxed-image-block"><a href="http://shane-hale.com/files/cache/a49eca387ae70b9d9124df6251971145_f6.png" title="Run Configuration" rel="lb_image" class="cboxElement"><img border="0" class="lightboxed-image" alt="Run Configuration" src="./Eclipse PJ2 Configuration_files/e7f3d3dba84f16dd01bc894dc457ff61_f6.png" width="240" height="244"></a></div></div><p><strong>Step 6)</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Go to the ‘Main’ tab, and type ‘<em><strong>pj2</strong></em>’ into the Main class textbox.</p>	<div id="blockStyle35Main5" class=" ccm-block-styles">
+<div class="lightboxed-image-block"><a href="http://shane-hale.com/files/cache/f308fd42175d851e8d5ceb7f682f84ff_f3.png" title="Main class" rel="lb_image" class="cboxElement"><img border="0" class="lightboxed-image" alt="Main class" src="./Eclipse PJ2 Configuration_files/dd2a38af7167c81adb76a41ea825f7a0_f3.png" width="240" height="268"></a></div></div><p><strong>Step 7)&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp; Now, click to the ‘<strong>Arguments</strong>’ tab, and type your project name into the ‘<strong>Arguments</strong>’ textbox.</p>	<div id="blockStyle37Main4" class=" ccm-block-styles">
+<div class="lightboxed-image-block"><a href="http://shane-hale.com/files/cache/7f73a21b277b2a5b5f19a57bd4e0f0ea_f2.png" title="Arguments" rel="lb_image" class="cboxElement"><img border="0" class="lightboxed-image" alt="Arguments" src="./Eclipse PJ2 Configuration_files/c24facb2219ce30991abcc43a1637587_f2.png" width="240" height="208"></a></div></div><p><strong>Step 8)</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Finally, click ‘<strong>Run</strong>’</p>
+<p><strong>Step 9)&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp; The application should now execute, and the program output displayed in the console.</p><style>
+
+.guestBook-wrapper { margin-top:32px; }
+
+.guestBook-averageRating { float:right; }
+
+.guestBook-wrapper .responseMsg { font-weight:bold; margin-top:32px; }
+
+.guestBook-wrapper .ccm-spacer{ clear:both; font-size:1px; line-height:1px; }
+
+h3.guestBook-title {
+	border-bottom:1px solid #666666; margin-top:0px; padding-top:0px;
+}
+
+.guestBook-entries { margin-bottom:32px;}
+
+div.guestBook-entry {
+	padding:4px 0 4px 0;
+	margin:6px 0 12px 0;
+}
+
+.guestBook-entry div.contentByLine {
+	font-size:12px;
+	line-height:16px;
+	color:#333333;
+	margin-bottom: 4px;
+}
+
+.guestBook-entry .ratingStarsWrap{ margin-top:4px; }
+
+.guestBook-entry div.guestBook-manage-links {
+	font-size:.8em;
+	color:#333333;
+	text-align:right;
+}
+.guestBook-formBlock {
+	margin:32px 0 12px 0;
+}
+.guestBook-formBlock label {
+	width:60px;
+	display:block;
+	float:left;
+}
+.guestBook-formBlock textarea {
+	width:100%;
+	height: 150px;
+	margin: 12px 0 12px 0;
+}
+.guestBook-formBlock .note {
+	font-size:10px;
+}
+
+.guestBook-formBlock span.error, div#guestBook-formBlock-40 span.error {
+	color:#990000;
+	text-align:left;
+}
+</style>
+
+<div class="guestBook-wrapper" id="reviewsBlock40">
+	
+	<div class="guestBook-averageRating">
+		<div style="float:right">
+		<div class="ccm-rating"><div class="rating-star rating-star-readonly rating-star-off"><a href="javascript:void(0)"></a></div><div class="rating-star rating-star-readonly rating-star-off"><a href="javascript:void(0)"></a></div><div class="rating-star rating-star-readonly rating-star-off"><a href="javascript:void(0)"></a></div><div class="rating-star rating-star-readonly rating-star-off"><a href="javascript:void(0)"></a></div><div class="rating-star rating-star-readonly rating-star-off"><a href="javascript:void(0)"></a></div></div>		<script type="text/javascript">
+			$(function() {
+				$("#reviewsBlock40 div.ccm-rating input[type=radio]").rating();
+			});
+		</script>
+		</div>
+		<div style="float:right; margin-right:4px;">Average Rating:</div>
+	</div>
+	
+	<h3 class="guestBook-title">
+	Comments	</h3>
+	
+	
+		
+	<div class="guestBook-entries">
+		</div> 
+	
+		
+					
+			<a name="guestBookForm-40"></a>
+			<div id="guestBook-formBlock-40" class="guestBook-formBlock">
+				<h4 class="guestBook-formBlock-title">Leave a Review</h4>
+				<form method="post" action="http://shane-hale.com/index.php?cID=146&bID=40&arHandle=Main&ccm_token=1424800913:b873604b7421cc2a3babef38323db7fc&btask=passthru&method=form_save_entry#guestBookForm-40">
+									<label for="name" class="control-label">Name:</label>										<br>
+					<input id="name" type="text" name="name" value="" class="ccm-input-text">					<br>
+
+					<label for="email" class="control-label">Email:</label>										<br>
+					<input id="email" type="text" name="email" value="" class="ccm-input-text">					<br>
+									
+				
+				<label for="rating" class="control-label">Rating:</label>								<br>
+				<div class="ccm-rating" id="ccm-rating-rating">
+			<input type="text" class="rating-star-control" name="rating" id="rating" value="" size="2" style="display: none;"><div class="rating-cancel"><a title="Cancel Rating"></a></div><div class="rating-star rater-0 rating-star-live"><a title="20">20</a></div>
+			<div class="rating-star rater-0 rating-star-live"><a title="40">40</a></div>
+			<div class="rating-star rater-0 rating-star-live"><a title="60">60</a></div>
+			<div class="rating-star rater-0 rating-star-live"><a title="80">80</a></div>
+			<div class="rating-star rater-0 rating-star-live"><a title="100">100</a></div>
+		</div> 
+				<br>
+							
+				
+				<textarea id="commentText" name="commentText" class="ccm-input-textarea"></textarea>				<br>
+				Please type the letters and numbers shown in the image.<div><img src="./Eclipse PJ2 Configuration_files/captcha" alt="Captcha Code" onclick="this.src = &#39;/index.php/tools/required/captcha?nocache=&#39;+(new Date().getTime())" class="ccm-captcha-image"></div><br><div>Click the image to see another captcha.</div><br><div><input type="text" name="ccmCaptchaCode" class="ccm-input-captcha" required="required"></div><br>				<br><br>
+				<input type="submit" name="Post Comment" value="Post Comment" class="button">
+				</form>
+			</div>
+			</div>
+            </div><!-- #content ends -->
+        </div><!-- .row ends -->
+    
+    </div><!-- #wrapper ends -->
+    
+    <footer>
+    	<div class="row">
+            <div class="col_3">
+                <!-- Piwik -->
+<script type="text/javascript">// <![CDATA[
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://shane-hale.com/stats/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+// ]]></script>
+<noscript>&lt;p&gt;&lt;img src="http://shane-hale.com/stats/piwik.php?idsite=1" style="border:0;" alt="" /&gt;&lt;/p&gt;</noscript><!-- End Piwik Code -->            </div><!-- .col_3 ends -->
+            <div class="col_3">
+                            </div><!-- .col_3 ends -->
+            <div class="col_3">
+                            </div><!-- .col_3 ends -->
+            <div class="col_3 last">
+                
+<div id="HTMLBlock412" class="HTMLBlock">
+<script type="text/javascript">
+    google_ad_client = "ca-pub-9130637866843936";
+    google_ad_slot = "5504616003";
+    google_ad_width = 180;
+    google_ad_height = 150;
+</script>
+<!-- Footer Ad -->
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>            </div><!-- .col_3 ends -->
+        </div><!-- .row ends -->
+        <div class="row">
+            <div id="credits" class="col_12 clearboth">
+                <p class="left">© 2015 Shane-Hale. All Rights Reserved. 			
+	</p>
+            </div><!-- #credits ends -->
+        </div><!-- .row ends -->
+    </footer><!-- footer ends -->
+
+</div><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;"><iframe id="_atssh931" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px; left: 0px;" src="./Eclipse PJ2 Configuration_files/sh200.html"></iframe></div><script type="text/javascript" src="./Eclipse PJ2 Configuration_files/core201.js"></script><!-- #container ends -->
+
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none; padding-bottom: 20px; padding-right: 0px;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><title> </title><div id="WidgetFloaterPanels" translate="no" style="display: none;text-align: left;direction: ltr" class="LTRStyle"> <div id="WidgetFloater" style="display: none" onmouseover="Microsoft.Translator.OnMouseOverFloater()" onmouseout="Microsoft.Translator.OnMouseOutFloater()"> <div id="WidgetLogoPanel"> <span id="WidgetTranslateWithSpan" style="text-align:left;">Bing Translator</span> <span id="WidgetCloseButton" title="Exit Translation" onclick="Microsoft.Translator.FloaterOnClose()"><img src="./Eclipse PJ2 Configuration_files/close_x.png" id="WidgetCloseImage" class="WidgetCloseImage"></span></div> <div id="LanguageMenuPanel"> <div class="DDStyle_outer"><input name="LanguageMenu_svid" type="text" id="LanguageMenu_svid" style="display:none;" autocomplete="on" value="en" onclick="this.select()"> <input name="LanguageMenu_textid" type="text" id="LanguageMenu_textid" style="display:none;" autocomplete="on" onclick="this.select()"> <span onselectstart="return false" tabindex="0" class="DDStyle" id="__LanguageMenu_header" onclick="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);" onkeydown="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);" title="English" style="overflow: visible;">English</span> <div style="position:relative;text-align:left;left:0;"><div style="position:absolute;width:;left:0px;"><div class="DDStyle" style="display:none;" id="__LanguageMenu_popup"> <table id="LanguageMenu" border="0"> <tbody><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ar&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#ar">Arabic</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;hi&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#hi">Hindi</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;pt&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#pt">Portuguese</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;bg&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#bg">Bulgarian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;mww&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#mww">Hmong Daw</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;otq&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#otq">Querétaro Otomi</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ca&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#ca">Catalan</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;hu&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#hu">Hungarian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ro&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#ro">Romanian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;zh-CHS&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#zh-CHS">Chinese Simplified</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;id&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#id">Indonesian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ru&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#ru">Russian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;zh-CHT&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#zh-CHT">Chinese Traditional</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;it&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#it">Italian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sk&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#sk">Slovak</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;cs&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#cs">Czech</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ja&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#ja">Japanese</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sl&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#sl">Slovenian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;da&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#da">Danish</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;tlh&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#tlh">Klingon</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;es&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#es">Spanish</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;nl&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#nl">Dutch</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ko&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#ko">Korean</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sv&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#sv">Swedish</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;en&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#en">English</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;lv&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#lv">Latvian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;th&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#th">Thai</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;et&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#et">Estonian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;lt&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#lt">Lithuanian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;tr&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#tr">Turkish</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fi&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#fi">Finnish</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ms&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#ms">Malay</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;uk&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#uk">Ukrainian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fr&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#fr">French</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;mt&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#mt">Maltese</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ur&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#ur">Urdu</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;de&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#de">German</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;no&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#no">Norwegian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;vi&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#vi">Vietnamese</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;el&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#el">Greek</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fa&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#fa">Persian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;cy&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#cy">Welsh</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ht&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#ht">Haitian Creole</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;pl&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#pl">Polish</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;yua&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#yua">Yucatec Maya</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;he&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://shane-hale.com/index.php/java/java/eclipse-pj2-configuration/#he">Hebrew</a></td><td></td><td></td> </tr> </tbody></table> <img alt="" src="./Eclipse PJ2 Configuration_files/niche.gif" style="height:7px;width:17px;border-width:0px;left:20px;"> <div id="OriginalLanguageDiv"><span id="OriginalTextSpan">ORIGINAL: </span><span id="OriginalLanguageSpan"></span></div></div></div></div></div> <script type="text/javascript"> var LanguageMenu; var LanguageMenu_keys=["ar","bg","ca","zh-CHS","zh-CHT","cs","da","nl","en","et","fi","fr","de","el","ht","he","hi","mww","hu","id","it","ja","tlh","ko","lv","lt","ms","mt","no","fa","pl","pt","otq","ro","ru","sk","sl","es","sv","th","tr","uk","ur","vi","cy","yua"]; var LanguageMenu_values=["Arabic","Bulgarian","Catalan","Chinese Simplified","Chinese Traditional","Czech","Danish","Dutch","English","Estonian","Finnish","French","German","Greek","Haitian Creole","Hebrew","Hindi","Hmong Daw","Hungarian","Indonesian","Italian","Japanese","Klingon","Korean","Latvian","Lithuanian","Malay","Maltese","Norwegian","Persian","Polish","Portuguese","Querétaro Otomi","Romanian","Russian","Slovak","Slovenian","Spanish","Swedish","Thai","Turkish","Ukrainian","Urdu","Vietnamese","Welsh","Yucatec Maya"]; var LanguageMenu_callback=function(){ }; var LanguageMenu_popupid='__LanguageMenu_popup'; </script> </div> <div id="CTFLinksPanel"> <span id="ExternalLinksPanel"><a id="BingTranslatorLink" title="bing.com/translator" href="http://www.bing.com/translator" target="_blank"> <img id="BingTranslatorLinkImg" src="./Eclipse PJ2 Configuration_files/bingmark.png"></a> <a id="FacebookLink" href="https://www.facebook.com/bingtranslator" title="Bing Translator on Facebook" target="_blank"> <img id="FacebookImg" src="./Eclipse PJ2 Configuration_files/fbookmark.png"></a> <a id="ShareLink" title="Share" href="javascript:Microsoft.Translator.FloaterShowSharePanel()"> <img id="ShareImg" src="./Eclipse PJ2 Configuration_files/sharemark.png"></a> </span> </div> <div id="FloaterProgressBar"> <div id="ProgressFill"> Translating... </div> </div> </div> <div id="WidgetFloaterCollapsed" style="display: none" onmouseover="Microsoft.Translator.OnMouseOverFloater()"> <span id="WidgetFloaterCollapsedSpan">Bing Translator</span> <span id="WidgetCloseButtonCollapsed" title="Exit Translation" onclick="Microsoft.Translator.FloaterOnClose()"><img src="./Eclipse PJ2 Configuration_files/close_x.png" id="WidgetCloseImageCollapsed" class="WidgetCloseImage"></span></div> <div id="FloaterSharePanel" style="display: none"> <div id="ShareTextDiv"> <span id="ShareTextSpan"> COPY THE URL BELOW </span> </div> <div id="ShareTextboxDiv"> <input name="ShareTextbox" type="text" id="ShareTextbox" readonly="readonly" onclick="this.select()"> <!--a id="TwitterLink" title="Share on Twitter"> <img id="TwitterImg" src="http://www.microsofttranslator.com/static/213366/img/twitter_icon.png" /></a> <a-- id="FacebookLink" title="Share on Facebook"> <img id="FacebookImg" src="http://www.microsofttranslator.com/static/213366/img/facebook_icon.png" /></a--> <a id="EmailLink" title="Email this translation"> <img id="EmailImg" src="./Eclipse PJ2 Configuration_files/email_icon.png"></a> </div> <div id="ShareFooter"> <span id="ShareHelpSpan"><a id="ShareHelpLink"> <img id="ShareHelpImg" src="./Eclipse PJ2 Configuration_files/embed_question.png"></a></span> <span id="ShareBackSpan"><a id="ShareBack" href="javascript:Microsoft.Translator.FloaterOnShareBackClick()" title="Back To Translation"> Back</a></span> </div> <input name="EmailSubject" type="hidden" id="EmailSubject" value="Check out this page in {0} translated from {1}"> <input name="EmailBody" type="hidden" id="EmailBody" value="Translated: {0}%0d%0aOriginal: {1}%0d%0a%0d%0aAutomatic translation powered by Microsoft® Translator%0d%0ahttp://www.bing.com/translator?ref=MSTWidget"> <input type="hidden" id="ShareHelpText" value="This link allows visitors to launch this page and automatically translate it to {0}."> </div> <div id="FloaterEmbed" style="display: none"> <div id="EmbedTextDiv"> <span id="EmbedTextSpan">EMBED THE SNIPPET BELOW IN YOUR SITE</span> <a id="EmbedHelpLink" title="Copy this code and place it into your HTML."> <img id="EmbedHelpImg" src="./Eclipse PJ2 Configuration_files/embed_question.png"></a> </div> <div id="EmbedTextboxDiv"> <input name="EmbedSnippetTextBox" type="text" id="EmbedSnippetTextBox" readonly="readonly" value="&lt;div id=&#39;MicrosoftTranslatorWidget&#39; class=&#39;Dark&#39; style=&#39;color:white;background-color:#555555&#39;&gt;&lt;/div&gt;&lt;script type=&#39;text/javascript&#39;&gt;setTimeout(function(){var s=document.createElement(&#39;script&#39;);s.type=&#39;text/javascript&#39;;s.charset=&#39;UTF-8&#39;;s.src=((location &amp;&amp; location.href &amp;&amp; location.href.indexOf(&#39;https&#39;) == 0)?&#39;https://ssl.microsofttranslator.com&#39;:&#39;http://www.microsofttranslator.com&#39;)+&#39;/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&amp;ctf=true&amp;ui=true&amp;settings=manual&amp;from=en&#39;;var p=document.getElementsByTagName(&#39;head&#39;)[0]||document.documentElement;p.insertBefore(s,p.firstChild); },0);&lt;/script&gt;" onclick="this.select()"> </div> <div id="EmbedNoticeDiv"><span id="EmbedNoticeSpan">Enable collaborative features and customize widget: <a href="http://www.bing.com/widget/translator" target="_blank">Bing Webmaster Portal</a></span></div> <div id="EmbedFooterDiv"><span id="EmbedBackSpan"><a href="javascript:Microsoft.Translator.FloaterOnEmbedBackClick()" title="Back To Translation">Back</a></span></div> </div> <script type="text/javascript"> var intervalId = setInterval(function () { if (MtPopUpList) { LanguageMenu = new MtPopUpList(); var langMenu = document.getElementById(LanguageMenu_popupid); var origLangDiv = document.createElement("div"); origLangDiv.id = "OriginalLanguageDiv"; origLangDiv.innerHTML = "<span id='OriginalTextSpan'>ORIGINAL: </span><span id='OriginalLanguageSpan'></span>"; langMenu.appendChild(origLangDiv); LanguageMenu.Init('LanguageMenu', LanguageMenu_keys, LanguageMenu_values, LanguageMenu_callback, LanguageMenu_popupid); window["LanguageMenu"] = LanguageMenu; clearInterval(intervalId); } }, 1); </script> </div></body><div class="gr-context gr-dict gr-context-loader gr-dict-freemium" style="display: none;"><span class="gr-triangle"></span><div class="gr-placeholder"></div><a href="http://www.grammarly.com/?utm_source=dict&utm_medium=link&utm_campaign=chrome_plg" target="_blank" class="gr-hint-settings"></a><strong class="gr-title"></strong><div class="gr-dict-content"></div></div><div class="b-freemium-editor" style="display: none;"><div class="b-freemium-editor-back"></div><iframe class="gr-freemium-ifr"></iframe></div></html>
