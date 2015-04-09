@@ -48,12 +48,13 @@
 
 <p>Prof. Alan Kaminsky is happy to answer general questions about his Parallel Java 2 Library, receive bug reports, and entertain requests for additional features. Please contact him by email at ark­@­cs.rit.edu. He regrets that he is unable to provide technical support, specific installation instructions for your system, or advice about configuring your parallel computer hardware.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>This middleware is intended to be invoked with the <code>java</code> command and followed by the name of your class that extends the PJ2 class <code>Task</code> like so:</p>
+
+<pre><code>
+$ java pj2 YourClassName
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>This class that inherits from <code>Task</code> has access to what is arguably PJ2's most useful feature - the parallel for loop.</p>
 
 <h3>
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
